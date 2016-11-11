@@ -120,7 +120,7 @@ void shemaZVyboromGolovnogoElementu(double** arr, size_t dimentionArr = SIZE)
 
 int main(int argc, char const *argv[]) {
 double** a = createArr(SIZE);
-double arr[SIZE][SIZE+1] = {13, 14, 17, 14, 146, 9, 26, 7, 9, 135, 8, 4, 24, 11, 119, 15, 11, 5, 16};
+double arr[SIZE][SIZE+1] = {13, 14, 17, 14, 146, 9, 26, 7, 9, 135, 8, 4, 24, 11, 119, 15, 11, 5, 16, 109};
 for (size_t i = 0; i < SIZE; i++) {
     for (size_t j = 0; j < SIZE+1; j++) {
       a[i][j]=arr[i][j];
