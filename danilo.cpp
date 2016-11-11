@@ -35,7 +35,7 @@ void fillArr(double** arr)
         std::cin >> arr[j][i];
       }
     }**/
-    arr[SIZE][SIZE+1] = {13, 14, 17, 14, 146, 9, 26, 7, 9, 135, 8, 4, 24, 11, 119, 15, 11, 5,16, 109};
+  //  arr[SIZE][SIZE+1] = {13, 14, 17, 14 146, 9, 26, 7, 9, 135, 8, 4, 24, 11, 119, 15, 11, 5, 16};
 }
 
 void printArr(double** arr, size_t dimentionArr = SIZE)
@@ -120,7 +120,14 @@ void shemaZVyboromGolovnogoElementu(double** arr, size_t dimentionArr = SIZE)
 
 int main(int argc, char const *argv[]) {
 double** a = createArr(SIZE);
+double arr[SIZE][SIZE+1] = {13, 14, 17, 14, 146, 9, 26, 7, 9, 135, 8, 4, 24, 11, 119, 15, 11, 5, 16};
+for (size_t i = 0; i < SIZE; i++) {
+    for (size_t j = 0; j < SIZE+1; j++) {
+      a[i][j]=arr[i][j];
+    }
+}
 shemaZVyboromGolovnogoElementu(a);
+
 //multRow(a, 1, 10, SIZE);
 //diffRow(a, 1, 3);
 //swapRow(a,1 ,2);
